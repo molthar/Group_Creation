@@ -1,7 +1,7 @@
 Function Create_Group {
-	param(
+	param (
 		[string] $groupname
 )
-	gam create group`
-	$groupname`
+	gam create group `
+	$groupname `
 }
