@@ -8,6 +8,16 @@ Function Create_Group {
 	$groupname `
 }
 
+Function add_manager {
+	param (
+		[string] $groupname,
+		[string] $manager_email
+)
+	gam update group `
+	$groupname add manager `
+	$manager_email
+}
+
 Function Make_Distribution_Group {
 	param (
 	[string] $groupname
