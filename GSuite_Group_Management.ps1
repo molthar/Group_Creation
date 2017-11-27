@@ -8,15 +8,7 @@ Function Create_Group {
 	$groupname `
 }
 
-Function add_manager {
-	param (
-		[string] $groupname,
-		[string] $manager_email
-)
-	gam update group `
-	$groupname add manager `
-	$manager_email
-}
+
 
 Function Make_Distribution_Group {
 	param (
@@ -35,7 +27,7 @@ Function Make_Distribution_Group {
 	, `
 	who_can_post_message `
 	all_managers_can_post`
-	, `
+    , `
 	who_can_view_membership `
 	all_managers_can_view `
 	, `
@@ -56,4 +48,14 @@ Function Make_Distribution_Group {
 	, `
 	who_can_view_group `
 	all_managers_can_view `
+}
+
+Function add_manager {
+	param (
+		[string] $groupname,
+		[string] $manager_email
+)
+	gam update group `
+	$groupname add manager `
+	$manager_email
 }
