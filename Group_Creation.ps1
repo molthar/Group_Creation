@@ -24,7 +24,7 @@ Function Make_Distribution_Group {
 	invited_can_join `
 	, `
 	who_can_post_message `
-	all_managers_can_post`
+	all_managers_can_post `
 	, `
 	who_can_view_membership `
 	all_managers_can_view `
@@ -32,7 +32,7 @@ Function Make_Distribution_Group {
 	reply_to `
 	reply_to_sender `
 	, `
-	memebers_can_post_as_the_group `
+	members_can_post_as_the_group `
 	FALSE `
 	, `
 	include_in_global_address_list `
