@@ -11,13 +11,13 @@ $user_id = "~EMAIL"
 # Start-Transcript -path $transcript
 
 
-<# 
+<#
 	Removes all members from the specified G Suite Group (by role)
 	NOTE: Must specify role as:
 	  - owner
 	  - manager
 	  - member
-	
+
 	ex) remove_members -group_id $group_id -role member
 #>
 function remove_members {
@@ -33,7 +33,7 @@ function remove_members {
 
 <#
 	Prints a list of current members
-	
+
 	ex) get_group_members -group_id $group_id
 #>
 function get_group_members {
@@ -52,7 +52,7 @@ function get_group_members {
 	  - owner
 	  - manager
 	  - member
-	
+
 	ex) add_group_members -group_id $group_id -role_id member -user_id $user_id
 #>
 function add_group_members {
@@ -73,7 +73,7 @@ function add_group_members {
 	  - owner
 	  - manager
 	  - member
-	
+
 	ex) add_members -csv $csv -group_id $group_id -role_id member -user_id $user_id
 #>
 function add_members {
